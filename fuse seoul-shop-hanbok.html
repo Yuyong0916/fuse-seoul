@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>fuse seoul-shop/hanbok</title>
+    <meta charset="utf-8" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+	    <style type="text/css">
+    	
+     * {
+	  	box-sizing: border-box;
+	  	max-width: 1440px;
+	  	margin: 0;
+	  	font-family: 'Lato', sans-serif;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+
+		.navbar {
+			height: 60px;
+			margin-bottom: 50px;
+		}
+
+		.navbar #logo{
+			line-height: 60px;
+			text-decoration: none;
+			color: black;
+
+			position: absolute;
+			left: 123px;
+			top: 52px;
+		}
+
+		.navbar #logo P{
+			vertical-align: middle;
+
+			width: 286px;
+			height: 65px;
+
+			box-sizing: border-box;
+
+			//styleName: FUSE SEOUL / logo;
+				font-family: Lato;
+				font-size: 48px;
+				font-style: normal;
+				font-weight: 800;
+				line-height: 58px;
+				letter-spacing: 0em;
+				text-align: left;
+		}
+
+		.navbar #menu {
+			float: right;
+			list-style: none;
+
+			margin-left: 338px;
+			margin-top: 51px;
+			margin-bottom: 50px;
+
+			padding-right: 30px;
+			padding-left: 30px;
+
+			width: 583px;
+			height: 65px;
+			left: 738px;
+			top: 52px;
+
+			border: 1px solid #000000;
+			box-sizing: border-box;
+		}
+
+		.navbar #menu li{
+			float: left;
+			margin-left: 12px;
+			line-height: 60px;
+		}
+
+		.navbar #menu li a{
+			color: black;
+			padding: 22px 12px;
+			text-decoration: none;
+
+			//styleName: lato / bold-18;
+				font-family: Lato;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 22px;
+				letter-spacing: 0em;
+				text-align: left;
+		}
+
+		.navbar #menu li a:hover{
+			background-color: black;
+			color: white;
+		}
+
+		.navbar #logo :hover{
+			background-color: black;
+			color: white;
+		}
+
+		.header #navbar :hover{
+			background-color: black;
+			color: white;
+		}
+
+
+		.line{
+			text-align: center;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.header{
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 50px;
+
+			border: 1px solid #FFFFFF;
+			box-sizing: border-box;
+		}
+
+		.header h1{
+			text-align: center;
+			padding-bottom: 50px;
+
+		}
+
+		.header #navbar{
+			float: right;
+			list-style: none;
+			text-align: center;
+
+
+			width: 1200px;
+			height: 64px;
+
+			padding: 8px 30px 8px 30px;
+		}
+
+		.header #navbar li{
+			float: left;
+		}
+
+		.header #navbar li a{
+			padding: 10px 25px 10px 25px;
+			text-decoration: none;
+			color: black;
+
+			//styleName: lato / regular;
+				font-family: Lato;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 29px;
+				letter-spacing: 0em;
+				text-align: left;
+
+		}
+
+		.row{
+			/* Auto Layout */
+
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+
+			width: 1203px;
+			height: 604px;
+			left: 119px;
+			top: 414px;
+
+			padding: 0px 150px 0px 150px;
+			margin-bottom: 50px;
+
+		}
+
+		.underline{
+			text-align: center;
+			display: block;
+			margin-left: 200px;
+			margin-right: 200px;
+			top: 1700px;
+			position: absolute;
+		}
+
+		.title{
+			text-align: center;
+			top: 1750px;
+			margin-left: 700px;
+			margin-right: 700px;
+			position: absolute;
+			margin-bottom: 50px;
+		}
+
+		.row-other{
+			/* Auto Layout */
+
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+
+			width: 1203px;
+			height: 604px;
+
+			top: 1800px;
+			position: absolute;
+
+			padding: 0px 150px 0px 150px;
+			margin-bottom: 50px;
+		}
+
+		.course{
+			display:block;
+			margin-top: 40px;
+			margin-bottom: 20px;
+			margin-right: 48px;
+			width: 369px;
+			height: 604px;
+			text-decoration: none;
+		}
+
+		.course .course-image{
+			display: block;
+			width: 369px;
+			height: 524px;
+		}
+
+		.course .info {
+			line-height: normal;
+		}
+
+		.course .info p{
+			//styleName: noto sans kr / light;
+				font-family: Noto Sans KR;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 300;
+				line-height: 35px;
+				letter-spacing: 0em;
+				text-align: left;
+
+			margin-bottom: 10px;
+			color: black;
+		}
+
+		.course .info img{
+			float: right;
+			width: 24px;
+			height: 24px;
+		}
+
+		.course .lecture img{
+			float: right;
+			width: 24px;
+			height: 24px;
+		}
+
+		.course .lecture .name{
+			//styleName: lato / bold-24;
+				font-family: Lato;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 29px;
+				letter-spacing: 0em;
+				text-align: left;
+
+			line-height: 29px;
+			color:black;
+		}
+
+		.alert{
+			margin-top: 50px;
+			margin-bottom: 16px;
+		}
+
+		.container{
+			margin-bottom: 50px;
+		}
+
+		.footer {
+			/* Auto Layout */
+
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+
+			position: absolute;
+			height: 121px;
+			top: 2500px;
+			margin-left: auto;
+			margin-right: auto;
+			
+		}
+
+		.footer a{
+			margin-left: 10px;
+			margin-right: 10px;
+			text-decoration: none;
+		}
+
+    </style>
+  </head>
+
+  <body>
+
+  	<div class="navbar">
+  		<a href="#" id="logo">
+  			<p>FUSE SEOUL</p>
+  		</a>
+
+  		<ul id="menu">
+  			<li><a href="fuse seoul.html">MAIN</a></li>
+  			<li><a href="fuse seoul-shop/collavoration.html">SHOP</a></li>
+  			<li><a href="fuse seoul-cart.html">CART</a></li>
+  			<li><a href="fuse seoul-community.html">COMMUNITY</a></li>
+  			<li><a href="#">MYPAGE</a></li>
+  		</ul>
+  	</div>
+
+  	<div class="line">
+  		<img src="https://i.postimg.cc/85qTzyk6/line.png" alt="line">
+  	</div>
+
+  	<div class="header">
+  		<h1>HANBOK</h1>
+  		<ul id="navbar">
+  			<li><a href="#">Collavaration</a></li>
+  			<li><a href="#">Hanbok</a></li>
+  			<li><a href="#">Homewear</a></li>
+  			<li><a href="#">Top</a></li>
+  			<li><a href="#">Under</a></li>
+  			<li><a href="#">Suit</a></li>
+  			<li><a href="#">Outer</a></li>
+  		</ul>
+  	</div>
+
+  	<div class="line">
+  		<img src="https://i.postimg.cc/85qTzyk6/line.png" alt="line">
+  	</div>
+
+  	<div class="container">
+
+			<div class="row">
+				<div class="col-12 col-md-g col-lg-4 col-xl-3">
+					<a href="#" class="course">
+						<img class="course-image" src="https://i.postimg.cc/PJBTtFxp/image.png" alt="" width="100%">
+						<div class="info">
+							<p>반팔 저고리 셔츠</p>
+							<img src="https://i.postimg.cc/cLFkwtRT/heart-button.png" alt="like button">
+						</div>
+							<div class="lecture">
+								<div class="name">28,500원</div>
+
+								<img class="color" src="https://i.postimg.cc/5tGPkckC/color-black.png" alt="black color">
+								<img class="color" src="https://i.postimg.cc/DydMfMm9/color-white.png" alt="white color">
+								<img class="color" src="https://i.postimg.cc/fWdPpLsT/color-skyblue.png" alt="skyblue color">
+							</div>
+							</a>
+						</div>
+
+						<div class="col-12 col-md-g col-lg-4 col-xl-3">
+					<a href="#" class="course">
+						<img class="course-image" src="https://i.postimg.cc/QxJzdKPf/image.png" alt="" width="100%">
+						<div class="info">
+							<p>긴팔 저고리 셔츠</p>
+							<img src="https://i.postimg.cc/cLFkwtRT/heart-button.png" alt="like button">
+						</div>
+							<div class="lecture">
+								<div class="name">29,900원</div>
+
+								<img class="color" src="https://i.postimg.cc/5tGPkckC/color-black.png" alt="black color">
+								<img class="color" src="https://i.postimg.cc/DydMfMm9/color-white.png" alt="white color">
+								<img class="color" src="https://i.postimg.cc/fWdPpLsT/color-skyblue.png" alt="skyblue color">
+							</div>
+							</a>
+						</div>
+
+						<div class="col-12 col-md-g col-lg-4 col-xl-3">
+					<a href="#" class="course">
+						<img class="course-image" src="https://i.postimg.cc/L8y0zKmf/image.png" alt="" width="100%">
+						<div class="info">
+							<p>생활한복 긴바지</p>
+							<img src="https://i.postimg.cc/cLFkwtRT/heart-button.png" alt="like button">
+						</div>
+							<div class="lecture">
+								<div class="name">29,900원</div>
+
+								<img class="color" src="https://i.postimg.cc/5tGPkckC/color-black.png" alt="black color">
+								<img class="color" src="https://i.postimg.cc/DydMfMm9/color-white.png" alt="white color">
+								<img class="color" src="https://i.postimg.cc/fWdPpLsT/color-skyblue.png" alt="skyblue color">
+							</div>
+							</a>
+						</div>
+				</div>
+
+		<div class="underline">
+  		<img src="https://i.postimg.cc/85qTzyk6/line.png" alt="line">
+  		</div>
+
+  	<h2 class="title">추천상품</h2>
+
+			<div class="row-other">
+				<div class="col-12 col-md-g col-lg-4 col-xl-3">
+					<a href="#" class="course">
+						<img class="course-image" src="https://i.postimg.cc/L5HXKZwr/image.png" alt="" width="100%">
+						<div class="info">
+							<p>난초 반팔티</p>
+							<img src="https://i.postimg.cc/cLFkwtRT/heart-button.png" alt="like button">
+						</div>
+							<div class="lecture">
+								<div class="name">23,500원</div>
+
+								<img class="color" src="https://i.postimg.cc/5tGPkckC/color-black.png" alt="black color">
+								<img class="color" src="https://i.postimg.cc/DydMfMm9/color-white.png" alt="white color">
+								<img class="color" src="https://i.postimg.cc/fWdPpLsT/color-skyblue.png" alt="skyblue color">
+							</div>
+							</a>
+						</div>
+
+						<div class="col-12 col-md-g col-lg-4 col-xl-3">
+					<a href="#" class="course">
+						<img class="course-image" src="https://i.postimg.cc/CLx1ckj8/image.png" alt="" width="100%">
+						<div class="info">
+							<p>부채 반팔티</p>
+							<img src="https://i.postimg.cc/cLFkwtRT/heart-button.png" alt="like button">
+						</div>
+							<div class="lecture">
+								<div class="name">23,500원</div>
+
+								<img class="color" src="https://i.postimg.cc/5tGPkckC/color-black.png" alt="black color">
+								<img class="color" src="https://i.postimg.cc/DydMfMm9/color-white.png" alt="white color">
+								<img class="color" src="https://i.postimg.cc/fWdPpLsT/color-skyblue.png" alt="skyblue color">
+							</div>
+							</a>
+						</div>
+
+						<div class="col-12 col-md-g col-lg-4 col-xl-3">
+					<a href="#" class="course">
+						<img class="course-image" src="https://i.postimg.cc/xCGC4Pxv/image.png" alt="" width="100%">
+						<div class="info">
+							<p>매란 국극단 반팔티</p>
+							<img src="https://i.postimg.cc/cLFkwtRT/heart-button.png" alt="like button">
+						</div>
+							<div class="lecture">
+								<div class="name">23,500원</div>
+
+								<img class="color" src="https://i.postimg.cc/5tGPkckC/color-black.png" alt="black color">
+								<img class="color" src="https://i.postimg.cc/DydMfMm9/color-white.png" alt="white color">
+								<img class="color" src="https://i.postimg.cc/fWdPpLsT/color-skyblue.png" alt="skyblue color">
+							</div>
+							</a>
+						</div>
+				</div>
+			</div>
+
+  	<div class="footer">
+  			<img src="https://i.postimg.cc/y8Z42VyX/footer.png" alt="footer">
+  		</div>
+
+  </body>
+</html>
