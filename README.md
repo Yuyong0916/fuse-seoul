@@ -1,1 +1,1 @@
-# university / fuse seoul
+# fuse seoul
